@@ -1,0 +1,241 @@
+
+@import url('TWO Data Entry.html');
+
+#container {
+  margin: 0 0;
+}
+
+p {
+  text-align: center;
+  color:#0a0a0a;
+}
+
+nav {
+  margin: 0 0;
+  background-color: #e6a188;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 0;
+  list-style: none;
+  position: relative;
+  }
+  
+nav ul li {
+  display:inline-block;
+  background-color: #e6a188;
+  }
+
+nav a {
+  display:block;
+  padding:0 35px; 
+  color:#0f0f0f;
+  font-size:15px;
+  line-height: 30px;
+  text-decoration:none;
+}
+
+nav a:hover { 
+  background-color: #f8cccc; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+  display: none;
+  position: absolute; 
+  top: 30px; /* the height of the main nav */
+}
+  
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display:inherit;
+}
+  
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  width:195px;
+  float:none;
+  display:list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers */
+nav ul ul ul li {
+  position: relative;
+  top:  -30px; 
+  left: 180px;
+  width:190px;
+}
+
+/* Change this in order to change the Dropdown symbol 
+li > a:after { content:  ' >>'; }
+li > a:only-child:after { content: ''; }
+*/
+
+body, html {
+  color: #0f0f0f;
+  font-family: 'Abel', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+body {
+  font-size: 1.2em;
+  background: linear-gradient(rgba(247, 241, 241, 0.7), rgba(235, 232, 232, 0.7)), url() center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+
+.text-box {
+  background-color: #f3e9e9;
+  border-radius: 0px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 0.5 em;
+  color: #0f0f0f;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1 em;
+  line-height: 1.2em;
+}
+
+hr {
+  width: 70%;
+  margin: 10px auto;
+}
+
+#Entry-form {
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px;
+}
+
+.labels {
+  display:inline-block;
+  text-align: right;
+  width: 20%;
+  vertical-align: top;
+  margin-top: 2%; 
+  margin-left: auto;
+  color: #000;
+}
+
+.input-tab {
+  display:initial;
+  text-align: left;
+  width: 50px;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.input-field {
+  display: initial;
+  width: 150px;
+  padding: 5px;
+  margin: 10 50 20 0;
+  border: 1px solid #e67e22;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+  vertical-align:middle;
+}
+
+
+.input-field1 {
+  display:inline-block;
+  width: 15%;
+  padding: 5px;
+  margin: 10 50 20 0;
+  border: 1px solid #0a0a0a;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+}
+::-webkit-input-placeholder {
+   font-style: italic;
+  font-weight: 300;
+}
+
+input {
+  margin: 7px;
+}
+
+#dropdown {
+  width: 25%;
+  padding: 5px;
+  margin: 20px 0 10px 10px;  
+  border: 1px solid #e67e22;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 15px;
+}
+.btn {
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  background-color: #e67e22;
+  border-radius: 4px;
+  color: rgb(54, 48, 48);
+  font-size: 1em;
+  font-weight: bold;
+  font-family: inherit;
+  padding: 10px 15px;
+  border: 1px solid;
+}
+
+button:hover {
+  background-color: #bf6516;
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(236, 194, 194);
+  color: rgb(26, 23, 23);
+  text-align: center;
+  
+}
+.footer p:hover{
+  color: #c21414;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  height: 400px
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
